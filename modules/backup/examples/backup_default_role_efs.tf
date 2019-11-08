@@ -12,7 +12,7 @@ locals {
 }
 
 module "efs" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-efs//?ref=v0.0.8"
+  source = "github.com/trentmillar/aws-terraform-efs//?ref=v0.0.8"
 
   custom_tags = "${merge(
     local.tags,
@@ -25,7 +25,7 @@ module "efs" {
 }
 
 module "backup" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-backup//modules/backup/?ref=v0.0.3"
+  source = "github.com/trentmillar/aws-terraform-backup//modules/backup/?ref=v0.0.3"
 
   completion_window = 300
   environment       = "${local.tags["Environment"]}"

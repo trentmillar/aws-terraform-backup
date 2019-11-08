@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "backup_vault" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-backup//modules/vault/?ref=v0.0.3"
+  source = "github.com/trentmillar/aws-terraform-backup//modules/vault/?ref=v0.0.3"
 
   tags = {
     tag_name  = "tag_value"

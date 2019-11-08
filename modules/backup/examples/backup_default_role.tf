@@ -12,7 +12,7 @@ locals {
 }
 
 module "backup" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-backup//modules/backup/?ref=v0.0.3"
+  source = "github.com/trentmillar/aws-terraform-backup//modules/backup/?ref=v0.0.3"
 
   environment = "${local.tags["Environment"]}"
 

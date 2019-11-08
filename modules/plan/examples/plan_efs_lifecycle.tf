@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "backup_plan" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-backup//modules/plan/?ref=v0.0.3"
+  source = "github.com/trentmillar/aws-terraform-backup//modules/plan/?ref=v0.0.3"
 
   completion_window = "300"
 

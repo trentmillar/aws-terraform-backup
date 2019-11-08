@@ -19,7 +19,7 @@ resource "random_string" "identifier" {
 }
 
 module "db" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-dynamo//?ref=master"
+  source = "github.com/trentmillar/aws-terraform-dynamo//?ref=master"
 
   attributes = [
     {

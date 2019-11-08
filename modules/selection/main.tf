@@ -30,7 +30,7 @@ locals {
 }
 
 module "backup_role" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-iam_resources//modules/role/?ref=v0.0.1"
+  source = "github.com/trentmillar/aws-terraform-iam_resources//modules/role/?ref=v0.0.1"
 
   aws_service       = ["backup.amazonaws.com"]
   build_state       = "${var.create_iam_role}"

@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "backup_vault" {
-  source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-backup//modules/vault/?ref=v0.0.3"
+  source = "github.com/trentmillar/aws-terraform-backup//modules/vault/?ref=v0.0.3"
 
   kms_key_arn = "arn:aws:kms:us-west-2:<aws_account_number>:key/12345678-90ab-cdef-1234-567890abcdef"
 
